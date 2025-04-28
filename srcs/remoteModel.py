@@ -15,7 +15,7 @@ LLM_URL = os.getenv("LLM_URL")
 
 class CustomLLM(LLM):
 	url: str = Field(default=LLM_URL)
-	model: str = Field(default="mistral")
+	model: str = Field(default="mistral-8192")
 
 	def _call(self, prompt: str, stop: Optional[List[str]] = None, run_manager: Optional[CallbackManagerForLLMRun] = None) -> str:
 		payload = {

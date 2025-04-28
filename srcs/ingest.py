@@ -10,7 +10,7 @@ LLM_URL=os.getenv("LLM_URL")
 
 llm = CustomLLM(
 	url=LLM_URL,
-	model="mistral" #feel free to change model name here based on your local config
+	model="mistral-8192" #feel free to change model name here based on your local config
 )
 
 def format_markdown(raw_doc: str, max_retries: int = 2) -> str:
