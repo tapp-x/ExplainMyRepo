@@ -1,0 +1,8 @@
+numpy>=1.21.0
+langchain>=0.0.200
+requests>=2.25.0
+python-dotenv>=0.21.0
+pydantic>=1.10.0
+flask>=2.0.0
+pgvector>=0.1.0
+gitingest>=0.1.4
